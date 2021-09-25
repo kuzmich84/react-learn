@@ -1,9 +1,10 @@
-import React from "react"
+import React from "react";
+import styles from "../shared/header.css"
 
-export function Header() {
+export function Header(props) {
     return (
         <header>
-            <h1>Header React</h1>
+            <h1 className={styles.example}>Header React</h1>
         </header>
     )
 }
