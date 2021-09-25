@@ -1,4 +1,5 @@
-<!doctype html>
+const indexTemplate = (content)=>
+    `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,8 +7,11 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>React - SkillBox </title>
+    <script src="/static/client.js" type="application/javascript"></script>
 </head>
 <body>
-<div id="react-root"></div>
+<div id="react-root">${content}</div>
 </body>
-</html>
+</html>`
+
+export default indexTemplate;
